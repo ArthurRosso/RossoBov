@@ -1,6 +1,7 @@
 package br.edu.ifrs.canoas.tcc.sisbov.model;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,9 +19,13 @@ public class Animal implements Serializable {
 	@GenericGenerator( name = "increment", strategy = "increment")
 	private Long id;
 	
-	private String nome;	
-
+	private String nome;
 	
+	private LocalDate dataNasc;
+
+	private double peso;
+
+
 	public Long getId() {
 		return id;
 	}
@@ -35,5 +40,21 @@ public class Animal implements Serializable {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	
+	public LocalDate getDataNasc() {
+		return dataNasc;
+	}
+
+	public void setDataNasc(LocalDate dataNasc) {
+		this.dataNasc = dataNasc;
+	}
+	
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
 	}
 }

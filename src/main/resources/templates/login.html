@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Faceboi - entrar</title>
+
+
+<!-- Bootstrap core CSS -->
+<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+	rel="stylesheet" />
+<link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}"
+	rel="stylesheet" />
+
+<link rel="stylesheet" href="../css/login.css">
+
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<form class="form-signin">
+			<h2 class="form-signin-heading">Entrar</h2>
+			<input type="text" class="form-control" name="email"
+				placeholder="Email" required="" autofocus="" /> <input
+				type="password" class="form-control" name="password"
+				placeholder="Senha" required="" />
+			</label>
+			<p>Novo por aqui? <a href="/register">Registre-se</a> hoje!</p>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+		</form>
+	</div>
+
+
+
+</body>
+
+</html>
