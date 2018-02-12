@@ -1,7 +1,7 @@
 package br.edu.ifrs.canoas.tcc.sisbov.model;
 
 import java.io.Serializable;
-import java.time.LocalDate;
+import java.sql.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,7 +21,7 @@ public class Animal implements Serializable {
 	
 	private String nome;
 	
-	private LocalDate dataNasc;
+	private Date dataNasc;
 
 	private double peso;
 
@@ -42,11 +42,11 @@ public class Animal implements Serializable {
 		this.nome = nome;
 	}
 	
-	public LocalDate getDataNasc() {
+	public Date getDataNasc() {
 		return dataNasc;
 	}
 
-	public void setDataNasc(LocalDate dataNasc) {
+	public void setDataNasc(Date dataNasc) {
 		this.dataNasc = dataNasc;
 	}
 	
