@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Faceboi</title>
+
+<!-- Bootstrap core CSS -->
+<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+	rel="stylesheet" />
+<link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}"
+	rel="stylesheet" />
+
+<!-- Custom styles for this template -->
+<link href="../static/css/index.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<div class="navbar navbar-inverse navbar-expand-lg fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Faceboi</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/animais">Lista de Animais</a></li>
+					<li><a href="/calendario">Calendário de vacinas</a></li>
+					<li><a href="/relatorios">Relatórios</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/signin">Sign in</a></li>
+					<li><a href="/signup">Sign up</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Content -->
+	<div class="container">
+
+		<!-- Jumbotron Header -->
+		<header class="jumbotron my-4">
+			<h1 class="display-3">Bem vindo!</h1>
+			<p class="lead">Esta aplicação tem o objetivo de ajudar o homem
+				do campo a administrar as vacinas de seu rebanho.</p>
+		</header>
+
+		<!-- Page Features -->
+		<div class="row text-center">
+		
+			<div class="card text-center" style="width: 25rem;">
+				<div class="card-block">
+					<h4 class="card-title">Vacina</h4>
+					<p class="card-text">O lote {{numeroLote}} deve ser vacinado.</p>
+				</div>
+			</div>
+
+		</div>
+		<!-- /.row -->
+
+	</div>
+	<!-- /.container -->
+
+	<!-- Bootstrap and JQuery core JavaScript -->
+	<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</body>
+</html>

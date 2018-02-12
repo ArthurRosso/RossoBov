@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+	
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+<title>Faceboi - calendário</title>
+
+<link href='http://fonts.googleapis.com/css?family=Economica'
+	rel='stylesheet' type='text/css'>
+	
+<!-- Bootstrap core CSS -->
+<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+	rel="stylesheet" />
+<link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}"
+	rel="stylesheet" />
+
+<!-- Respomsive slider -->
+<link href="../css/responsive-calendar.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<!-- Navigation -->
+	<div class="navbar navbar-inverse navbar-expand-lg fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Faceboi</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/animais">Lista de Animais</a></li>
+					<li class="active"><a href="/calendario">Calendário de vacinas</a></li>
+					<li><a href="/relatorios">Relatórios</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/signin">Sign in</a></li>
+					<li><a href="/signup">Sign up</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<!-- Responsive calendar - START -->
+		<div class="responsive-calendar">
+			<div class="controls">
+				<a class="pull-left" data-go="prev"><div class="btn btn-primary">Prev</div></a>
+				<h4>
+					<span data-head-year></span> <span data-head-month></span>
+				</h4>
+				<a class="pull-right" data-go="next"><div
+						class="btn btn-primary">Next</div></a>
+			</div>
+			<hr />
+			<div class="day-headers">
+				<div class="day header">Segunda</div>
+				<div class="day header">Terça</div>
+				<div class="day header">Quarta</div>
+				<div class="day header">Quinta</div>
+				<div class="day header">Sexta</div>
+				<div class="day header">Sábado</div>
+				<div class="day header">Domingo</div>
+			</div>
+			<div class="days" data-group="days"></div>
+		</div>
+		<!-- Responsive calendar - END -->
+	</div>
+	<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+	<script src="../js/responsive-calendar.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".responsive-calendar").responsiveCalendar({
+				time : '2018-02',
+				events : {
+					"2018-02-15" : {
+						"number" : 5
+					},
+					"2018-02-26" : {
+						"number" : 1
+					},
+					"2018-02-03" : {
+						"number" : 1
+					},
+					"2018-02-12" : {}
+				}
+			});
+		});
+	</script>
+</body>
+</html>
