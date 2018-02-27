@@ -13,6 +13,8 @@
 <!-- Bootstrap core CSS -->
 <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
 	rel="stylesheet" />
+<link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}"
+	rel="stylesheet" />
 
 <!-- Custom styles for this template -->
 <link href="../static/css/index.css" rel="stylesheet">
@@ -29,7 +31,7 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="/notificacoes">Notificações</a></li>
+					<li class="active"><a href="/notificacoes">Notificações</a></li>
 					<li><a href="/animais">Lista de Animais</a></li>
 					<li><a href="/calendario">Calendário de vacinas</a></li>
 					<li><a href="https://adminlte.io/themes/AdminLTE/pages/charts/chartjs.html">Relatórios</a></li>
@@ -52,14 +54,28 @@
 	<!-- Page Content -->
 	<div class="container">
 
-		<!-- Jumbotron Header -->
-		<header class="jumbotron my-4">
-			<h1 class="display-3">Bem vindo!</h1>
-			<p class="lead">Esta aplicação tem o objetivo de ajudar o homem
-				do campo a administrar as vacinas de seu rebanho.</p>
-		</header>
-
 		<!-- Page Features -->
+		<div class="row text-center">
+
+			<div class="text-left alert alert-danger" role="alert">O animal
+				{{animal.nome}} deve ser vacinado.</div>
+
+		</div>
+
+		<div class="row text-center">
+
+			<div class="text-left alert alert-danger" role="alert">O animal
+				{{animal.nome}} deve ser vacinado.</div>
+
+		</div>
+
+		<div class="row text-center">
+
+			<div class="text-left alert alert-danger" role="alert">O animal
+				{{animal.nome}} deve ser vacinado.</div>
+
+		</div>
+		<!-- /.row -->
 
 
 	</div>

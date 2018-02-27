@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import br.edu.ifrs.canoas.tcc.sisbov.model.Animal;
+import br.edu.ifrs.canoas.tcc.sisbov.domain.Animal;
 import br.edu.ifrs.canoas.tcc.sisbov.repository.Animais;
 
 

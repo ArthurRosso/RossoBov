@@ -1,4 +1,4 @@
-package br.edu.ifrs.canoas.tcc.sisbov.model;
+package br.edu.ifrs.canoas.tcc.sisbov.domain;
 
 import java.io.Serializable;
 import java.sql.Date;

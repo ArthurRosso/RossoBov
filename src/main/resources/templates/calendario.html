@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org">
-	
+
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+
 <title>Faceboi - calendário</title>
 
 <link href='http://fonts.googleapis.com/css?family=Economica'
 	rel='stylesheet' type='text/css'>
-	
+
 <!-- Bootstrap core CSS -->
 <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
 	rel="stylesheet" />
@@ -32,10 +32,19 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
+					<li><a href="/notificacoes">Notificações</a></li>
 					<li><a href="/animais">Lista de Animais</a></li>
-					<li class="active"><a href="/calendario">Calendário de vacinas</a></li>
-					<li><a href="/relatorios">Relatórios</a></li>
-					<li><a href="/manejo">Fazer Manejo</a></li>
+					<li class="active"><a href="/calendario">Calendário de
+							vacinas</a></li>
+					<li><a href="https://adminlte.io/themes/AdminLTE/pages/charts/chartjs.html">Relatórios</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Fazer Manejo <span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Saída</a></li>
+							<li><a href="#">Pesagem</a></li>
+							<li><a href="#">Vacina</a></li>
+						</ul></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="/login">Entrar/Registrar-se</a></li>
