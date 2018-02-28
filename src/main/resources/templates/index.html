@@ -13,6 +13,8 @@
 <!-- Bootstrap core CSS -->
 <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"
 	rel="stylesheet" />
+<link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}"
+	rel="stylesheet" />
 
 <!-- Custom styles for this template -->
 <link href="../static/css/index.css" rel="stylesheet">
@@ -22,32 +24,38 @@
 <body>
 
 	<!-- Navigation -->
-	<div class="navbar navbar-inverse navbar-expand-lg fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="/">Faceboi</a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="/notificacoes">Notificações</a></li>
-					<li><a href="/animais">Lista de Animais</a></li>
-					<li><a href="/calendario">Calendário de vacinas</a></li>
-					<li><a href="https://adminlte.io/themes/AdminLTE/pages/charts/chartjs.html">Relatórios</a></li>
-					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#">Fazer Manejo <span
-							class="caret"></span></a>
+			<a class="navbar-brand" href="/">Faceboi</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="/notificacoes">Notificações
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="/animais">Lista
+							de Animais</a></li>
+					<li class="nav-item"><a class="nav-link" href="/calendario">Calendário
+							de vacinas</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Relatórios</a>
+					</li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" data-toggle="dropdown">Fazer
+							Manejo <span class="caret"></span>
+					</a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Saída</a></li>
 							<li><a href="#">Pesagem</a></li>
 							<li><a href="#">Vacina</a></li>
 						</ul></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/login">Entrar/Registrar-se</a></li>
+					<li class="nav-item"><a class="nav-link" href="/login">Entrar/Registrar-se</a></li>
 				</ul>
 			</div>
 		</div>
-	</div>
+	</nav>
 
 	<!-- Page Content -->
 	<div class="container">
