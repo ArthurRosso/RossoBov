@@ -15,9 +15,21 @@
 	rel="stylesheet" />
 <link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}"
 	rel="stylesheet" />
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="../bower_components/font-awesome/css/font-awesome.min.css">
+<!-- Ionicons -->
+<link rel="stylesheet"
+	href="../bower_components/Ionicons/css/ionicons.min.css">
+<!-- Theme style -->
+<link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+<!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+<link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
 
-<!-- Custom styles for this template -->
-<link href="../static/css/index.css" rel="stylesheet">
+<!-- Google Font -->
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
 </head>
 
@@ -44,7 +56,7 @@
 					<li class="nav-item"><a class="nav-link" href="#">Relatórios</a>
 					</li>
 					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" data-toggle="dropdown" >Fazer
+						class="nav-link dropdown-toggle" data-toggle="dropdown">Fazer
 							Manejo <span class="caret"></span>
 					</a>
 						<ul class="dropdown-menu">
@@ -61,35 +73,49 @@
 	<!-- Page Content -->
 	<div class="container">
 
-		<!-- Page Features -->
-		<div class="row text-center">
+		<ul class="timeline">
 
-			<div class="text-left alert alert-danger" role="alert">O animal
-				{{animal.nome}} deve ser vacinado.</div>
+			<!-- timeline time label -->
+			<li class="time-label"><span class="bg-red"> 06 Mar. 2018
+			</span></li>
+			<!-- /.timeline-label -->
 
-		</div>
+			<!-- timeline item -->
+			<li>
+				<!-- timeline icon --> <i class="fa fa-envelope bg-blue"></i>
+				<div class="timeline-item">
+					<span class="time"><i class="fa fa-clock-o"></i> 09:05</span>
 
-		<div class="row text-center">
+					<h3 class="timeline-header">
+						Tipo de manejo
+					</h3>
 
-			<div class="text-left alert alert-danger" role="alert">O animal
-				{{animal.nome}} deve ser vacinado.</div>
+					<div class="timeline-body"> Vacina da febre afitosa em 3 semanas. </div>
 
-		</div>
+					<div class="timeline-footer">
+						<a class="btn btn-primary btn-xs">...</a>
+					</div>
+				</div>
+			</li>
+			<!-- END timeline item -->
 
-		<div class="row text-center">
+			...
 
-			<div class="text-left alert alert-danger" role="alert">O animal
-				{{animal.nome}} deve ser vacinado.</div>
-
-		</div>
-		<!-- /.row -->
+		</ul>
 
 
 	</div>
 	<!-- /.container -->
 
-	<!-- Bootstrap and JQuery core JavaScript -->
-	<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
-	<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+	<!-- jQuery 3 -->
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap 3.3.7 -->
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- FastClick -->
+	<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+	<!-- AdminLTE App -->
+	<script src="../dist/js/adminlte.min.js"></script>
+	<!-- AdminLTE for demo purposes -->
+	<script src="../dist/js/demo.js"></script>
 </body>
 </html>

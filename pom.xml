@@ -26,6 +26,7 @@
 		<thymeleaf-layout-dialect.version>2.0.4</thymeleaf-layout-dialect.version>
 	</properties>
 
+	<!--WEBJARS -->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
