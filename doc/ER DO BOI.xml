@@ -29,7 +29,7 @@
 	<Entidades>
     <Entidade nome="RACA" id="3">
       <Left Valor="938"/>
-      <Top Valor="293"/>
+      <Top Valor="304"/>
       <Width Valor="102"/>
       <Height Valor="66"/>
       <Fonte default="-1"/>
@@ -676,8 +676,8 @@
   </Entidades>
 	<Relacoes>
     <Relacao nome="É DE" id="56">
-      <Left Valor="733"/>
-      <Top Valor="301"/>
+      <Left Valor="732"/>
+      <Top Valor="312"/>
       <Width Valor="102"/>
       <Height Valor="51"/>
       <Fonte default="-1"/>
@@ -695,7 +695,7 @@
           <Cardinalidades Cardinalidade="4">
             <Cardinalidade nome="" id="57">
               <Left Valor="632"/>
-              <Top Valor="311"/>
+              <Top Valor="322"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -723,7 +723,7 @@
           <Cardinalidades Cardinalidade="1">
             <Cardinalidade nome="" id="58">
               <Left Valor="900"/>
-              <Top Valor="311"/>
+              <Top Valor="322"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -767,7 +767,7 @@
           <MostraCardinalidade Valor="-1" Card_id="71"/>
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="71">
-              <Left Valor="581"/>
+              <Left Valor="598"/>
               <Top Valor="80"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
@@ -795,7 +795,7 @@
           <MostraCardinalidade Valor="-1" Card_id="70"/>
           <Cardinalidades Cardinalidade="4">
             <Cardinalidade nome="" id="70">
-              <Left Valor="580"/>
+              <Left Valor="581"/>
               <Top Valor="278"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
@@ -967,9 +967,9 @@
         </Ligacao>
       </Ligacoes>
     </Relacao>
-    <Relacao nome="ESTOCA" id="72">
-      <Left Valor="731"/>
-      <Top Valor="104"/>
+    <Relacao nome="USA" id="72">
+      <Left Valor="662"/>
+      <Top Valor="106"/>
       <Width Valor="102"/>
       <Height Valor="51"/>
       <Fonte default="-1"/>
@@ -1010,12 +1010,12 @@
           <Orientacao Valor="0"/>
           <Fraca Valor="0"/>
         </Ligacao>
-        <Ligacao Destino_ID="4">
-          <MostraCardinalidade Valor="-1" Card_id="73"/>
-          <Cardinalidades Cardinalidade="3">
-            <Cardinalidade nome="" id="73">
-              <Left Valor="615"/>
-              <Top Valor="80"/>
+        <Ligacao Destino_ID="2">
+          <MostraCardinalidade Valor="-1" Card_id="124"/>
+          <Cardinalidades Cardinalidade="4">
+            <Cardinalidade nome="" id="124">
+              <Left Valor="632"/>
+              <Top Valor="300"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -1030,7 +1030,7 @@
               <TamAuto Valor="-1"/>
               <Tipo Valor="0"/>
               <TextAlin Valor="0"/>
-              <Card Valor="3"/>
+              <Card Valor="4"/>
               <Fixa Valor="0"/>
               <Ligacoes/>
             </Cardinalidade>
